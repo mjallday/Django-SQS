@@ -68,6 +68,6 @@ def dashboard(request):
         extra_context,
         context_instance=RequestContext(request))
 
-#    cache.set(cache_key, response, 60 * 15) # Cache for 15 minutes
+    cache.set(cache_key, response, 60 * 1) # Cache for 1 minute
     
     return response
